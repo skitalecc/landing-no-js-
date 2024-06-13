@@ -1,0 +1,17 @@
+{
+  "name": "land_3",
+  "version": "1.0.0",
+  "description": "land page",
+  "source": "index.html",
+  "scripts": {
+    "sass:watch": "sass --style=expanded --watch styles:dist",
+    "parcel:watch": "parcel serve --dist-dir public",
+    "parcel:build": "parcel build --dist-dir build --public-url ./"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.12.0",
+    "sass": "^1.77.5"
+  }
+}
