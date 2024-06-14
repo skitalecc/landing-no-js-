@@ -1,12 +1,13 @@
 @use 'variables' as v;
 @use 'mixins' as m;
-@use 'placeholders';                                            
+@use 'placeholders';
 @use 'sass:color';
 
 .header {
     height: 52px;
     width: 100%;
     background-color: color.adjust(v.$color_white, $alpha: -0.9);
+
     border: {
         bottom: {
             width: 1px;
@@ -27,6 +28,7 @@
             @include m.d-flex(center, center);
 
             &-link {
+                position: relative;
                 font-size: 25px;
                 font-weight: 500;
                 color: v.$color_white;
@@ -39,13 +41,30 @@
                     cursor: pointer;
                     color: v.$color_grey;
                 }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    left: 0;
+                    right: 100%;
+                    /* top: 15px; */
+                    bottom: -4px;
+                    height: 1px;
+                    background-color: v.$color_grey;
+                    transition: right .29s;
+                }
+
+                &:hover::after {
+                    right: 0px;
+                }
             }
 
             @extend %hover-black;
         }
 
 
-        &__links {  
+        &__links {
             flex-grow: 1;
 
 
@@ -58,8 +77,29 @@
                         font-size: 22px;
                         font-weight: 400;
                         color: v.$color_white;
+                        position: relative;
 
-                        @extend %hover-black;
+                        &:hover {
+                            color: v.$color_grey;
+                            font-weight: 500;
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            display: block;
+                            left: 0;
+                            right: 100%;
+                            /* top: 15px; */
+                            bottom: -4px;
+                            height: 1px;
+                            background-color: v.$color_grey;
+                            transition: right .29s;
+                        }
+
+                        &:hover::after {
+                            right: 0px;
+                        }
                     }
                 }
             }
@@ -83,10 +123,29 @@
 
             &__link {
                 color: v.$color_white;
-
+                position: relative;
                 &:hover {
                     color: v.$color_grey;
                 }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    left: 0;
+                    right: 100%;
+                    /* top: 15px; */
+                    bottom: -4px;
+                    height: 1px;
+                    background-color: v.$color_grey;
+                    transition: right .29s;
+                }
+
+                &:hover::after {
+                    right: 0px;
+                }
+
+
             }
         }
 
