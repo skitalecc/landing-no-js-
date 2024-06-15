@@ -287,7 +287,7 @@ html {
   height: 830px;
   margin: 0 auto;
   padding: 140px 0 0 0;
-  background: url("assets/image/cloud_alpha.png") center/contain no-repeat;
+  background: url("../assets/image/cloud_alpha.png") center/contain no-repeat;
 }
 .hero__content {
   position: relative;
@@ -529,7 +529,7 @@ html {
 @media (max-width: 768px) {
   .hero {
     padding: 110px 15px 0;
-    background: url("assets/image/cloud_alpha.png") 0 25%/contain no-repeat;
+    background: url("../assets/image/cloud_alpha.png") 0 25%/contain no-repeat;
   }
 }
 @media (max-width: 576px) {
