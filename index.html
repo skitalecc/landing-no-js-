@@ -24,10 +24,10 @@
                 <div class="nav__links">
                     <ul class="nav__links-list list" aria-label="header nav links">
                         <li class="list__item">
-                            <a href="#" class="list__item-link">about</a>
+                            <a href="#about" class="list__item-link">about</a>
                         </li>
                         <li class="list__item">
-                            <a href="#" class="list__item-link">contact</a>
+                            <a href="#contacts" class="list__item-link">contacts</a>
                         </li>
                     </ul>
                 </div>
@@ -46,6 +46,63 @@
             </div>
         </div>
     </header>
+
+    <div class="mobile-navigation">
+        <label for="checkboxID" class="mobile-navigation__burger">
+            <svg class="mobile-navigation__burger-icon">
+                <use href="assets/sprites.svg#burger-icon"></use>
+            </svg>
+        </label>
+        <input type="checkbox" class="mobile-navigation__toggler" id="checkboxID">
+
+        <nav class="mobile-navigation__menu nav">
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                    <a href="#work" class="nav__list-item-link">
+                        How we work
+                    </a>
+                </li>
+
+                <li class="nav__list-item">
+                    <a href="#about" class="nav__list-item-link">
+                        About us
+                    </a>
+                </li>
+
+                <li class="nav__list-item">
+                    <a href="#experience" class="nav__list-item-link">
+                        Experience
+                    </a>
+                </li> 
+
+                <li class="nav__list-item">
+                    <a href="#testimonials" class="nav__list-item-link">
+                        Testimonials
+                    </a>
+                </li>
+
+                <li class="nav__list-item">
+                    <a href="#form" class="nav__list-item-link">
+                        Submit
+                    </a>
+                </li>
+
+                <li class="nav__list-item">
+                    <a href="#contacts" class="nav__list-item-link">
+                        Contacts
+                    </a>
+                </li>
+                
+            </ul>
+
+            <label for="checkboxID" class="mobile-navigation__cross">
+                <svg class="mobile-navigation__cross-icon">
+                    <use href="assets/sprites.svg#cross-icon"></use>
+                </svg>
+            </label>
+        </nav>
+
+    </div>
 
     <main aria-label="main content">
         <section class="hero-section">
@@ -73,7 +130,7 @@
             </div>
         </section>
 
-        <section class="work-section">
+        <section class="work-section" id="work">
             <div class="container">
                 <div class="work">
                     <h2 class="work__title">How we work</h2>
@@ -158,7 +215,7 @@
 
         <hr class="divider">
 
-        <section class="about-section">
+        <section class="about-section" id="about">
             <div class="container">
                 <div class="about">
                     <div class="about__quality">
@@ -198,7 +255,7 @@
 
         <hr>
 
-        <section class="experience-section">
+        <section class="experience-section" id="experience">
             <div class="container">
                 <div class="experience">
                     <h2 class="experience__title">
@@ -244,7 +301,7 @@
             </div>
         </section>
 
-        <section class="testimonials-section">
+        <section class="testimonials-section" id="testimonials">
             <div class="container">
                 <div class="testimonials">
                     <h2 class="testimonials__title">
@@ -290,28 +347,66 @@
             </div>
         </section>
 
-        <section class="form-section">
+        <section class="form-section" id="form">
             <div class="container">
                 <div class="form-section__wrapper">
 
-                    <form action="mailto::vokker.010101@gmail.com" class="form" >
+                    <form action="mailto::vokker.010101@gmail.com" class="form">
                         <label for="input-name" id="form-title" class="form__title">
                             Ready to get started? Drop us a line!
                         </label>
                         <input type="text" id="input-name" placeholder="Name" class="form__name" required>
                         <input type="email" id="input-email" placeholder="Email" class="form__email" required>
-                        <input type="text" id="input-name" placeholder="What we can do for you?" class="form__name" required> 
-                        
+                        <input type="text" id="input-name" placeholder="What we can do for you?" class="form__name"
+                            required>
+
                         <button type="submit" class="form__submit-btn">Send</button>
                     </form>
 
                 </div>
 
-             <div class="form-section__bg-cloud cloud--left"></div>   
-             <div class="form-section__bg-cloud cloud--right"></div>   
+                <div class="form-section__bg-cloud cloud--left"></div>
+                <div class="form-section__bg-cloud cloud--right"></div>
             </div>
         </section>
     </main>
+
+    <footer class="footer-section" id="contacts">
+        <div class="container">
+            <div class="footer">
+                <div class="footer_terms">
+                    <div class="footer__terms-links">
+                        <a href="#" class="footer__terms-link">
+                            Terms of Use
+                        </a>
+                        <a href="#" class="footer__terms-link">
+                            Privacy Policy
+                        </a>
+                    </div>
+
+                    <div class="footer__terms-rights">© CloudFlex 2024. All Rights Reserved.</div>
+                </div>
+
+                <address class="footer__contacts">
+                    <a href="https://linkenin.com" target="_blank">
+                        <svg class="footer__contacts-icon">
+                            <use href="assets/sprites.svg#linkedin-icon"></use>
+                        </svg>
+                    </a>
+                    <a href="https://facebook.com" target="_blank">
+                        <svg class="footer__contacts-icon">
+                            <use href="assets/sprites.svg#facebook-icon"></use>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <svg class="footer__contacts-icon">
+                            <use href="assets/sprites.svg#instagram-icon"></use>
+                        </svg>
+                    </a>
+                </address>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
