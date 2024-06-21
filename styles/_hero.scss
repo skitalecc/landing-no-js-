@@ -20,6 +20,7 @@
         .hero__title {
             @include m.font(110px, 700, v.$color_black);
             line-height: 1;
+            text-transform: uppercase;
         }
 
         .hero__action-btn {
@@ -97,6 +98,8 @@
             width: 126px;
             height: 198px;
             @include m.position(absolute, 1, -1, top, left, -75px, -35px);
+            // margin-inline-start: -60px;
+            // margin-inline-end: -10px;
         }
 
         &-content {

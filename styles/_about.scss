@@ -30,22 +30,22 @@
             }
             @media (max-width: v.$media_md) {
                 &-title {
-                    @include m.font(35px, 400, v.$color_white);
+                    @include m.font(37px, 400, v.$color_white);
                 }
     
                 &-desc {
                     max-width: 500px;
-                    @include m.font(16px, 300, v.$color_white);
+                    @include m.font(18px, 300, v.$color_white);
                 }
 
                 background: url('../assets/img/desktop_alpha.webp') 99% 100% / 450px no-repeat;
             }
             @media (max-width: v.$media_sm) {
                 &-desc {
-                    max-width: 320px;
+                    max-width: 330px;
                 }
 
-                background: url('../assets/img/desktop_alpha.webp') 130px 100% / 400px no-repeat;
+                background: url('../assets/img/desktop_alpha.webp') 130px 100% / 350px no-repeat;
             }
         }
 
@@ -95,12 +95,12 @@
                 @include m.d-flex(start, end, nowrap, column, 0, 20px);
 
                 &-title {
-                    @include m.font(35px, 400, v.$color_white);
+                    @include m.font(37px, 400, v.$color_white);
                 }
     
                 &-desc {
-                    max-width: 340px;
-                    @include m.font(16px, 300, v.$color_white);
+                    max-width: 360px;
+                    @include m.font(18px, 300, v.$color_white);
                 }
 
                 &::before {
@@ -156,12 +156,12 @@
 
                 &-title {
                     margin: 50px 0 0 0;
-                    @include m.font(35px, 400, v.$color_white);
+                    @include m.font(37px, 400, v.$color_white);
                 }
     
                 &-desc {
                     padding: 0 15px 0 0;
-                    @include m.font(16px, 300, v.$color_white);
+                    @include m.font(18px, 300, v.$color_white);
                 }
 
                 background: url('../assets/img/cactus_alpha.webp') 99% 100% / 320px no-repeat;
@@ -171,6 +171,10 @@
                 height: 500px;
                 &-title {
                     margin: 0;
+                }
+
+                &-desc {
+                    max-width: 500px;
                 }
                 background: url('../assets/img/cactus_alpha.webp') 99% 100% / 220px no-repeat;
             }
