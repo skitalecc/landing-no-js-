@@ -117,4 +117,7 @@
 
     }
 
+    @media (max-width: v.$media_md) {
+        padding: 50px 20px 80px 20px;
+    }
 }

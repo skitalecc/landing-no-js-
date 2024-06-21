@@ -67,7 +67,7 @@
     color: #000;
   }
   .info-card__desc {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 300;
     font-style: normal;
     color: #000;
@@ -818,7 +818,7 @@ html {
 }
 @media (max-width: 768px) {
   .work-section {
-    padding: 50px 20px 80px 20px;
+    padding: 50px 20px 0 10px;
   }
 }
 
@@ -1052,11 +1052,6 @@ html {
     margin: 0;
   }
 }
-@media (max-width: 768px) {
-  .about-section {
-    padding: 80px 0 0 0;
-  }
-}
 
 .experience {
   padding: 180px 0 0 0;
@@ -1091,11 +1086,6 @@ html {
   row-gap: 55px;
   width: 100%;
   padding: 15px;
-}
-@media (max-width: 768px) {
-  .experience {
-    padding: 80px 0 0 0;
-  }
 }
 
 .testimonials .slider__right-btn, .testimonials .slider__left-btn {
@@ -1223,11 +1213,6 @@ html {
     top: unset;
     bottom: 20px;
     right: 10px;
-  }
-}
-@media (max-width: 768px) {
-  .testimonials {
-    padding: 80px 0 80px 0;
   }
 }
 
@@ -1445,6 +1430,4 @@ html {
 
 body {
   background-color: #678FF2;
-}
-
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
