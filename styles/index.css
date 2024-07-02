@@ -10,7 +10,7 @@
 
 .header .nav .globe__link-icon:hover, .mobile-navigation__burger-icon:hover, .mobile-navigation__cross-icon:hover {
   cursor: pointer;
-  stroke: #000;
+  fill: #000;
 }
 
 .info-card {
@@ -67,7 +67,7 @@
     color: #000;
   }
   .info-card__desc {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 300;
     font-style: normal;
     color: #000;
@@ -483,6 +483,7 @@ html {
   font-style: normal;
   color: #000;
   line-height: 1;
+  text-transform: uppercase;
 }
 .hero__content .hero__action-btn {
   width: 380px;
@@ -818,7 +819,7 @@ html {
 }
 @media (max-width: 768px) {
   .work-section {
-    padding: 50px 20px 0 10px;
+    padding: 50px 20px 80px 20px;
   }
 }
 
@@ -865,14 +866,14 @@ html {
     background: url("../assets/img/desktop_alpha.webp") 99% 100%/450px no-repeat;
   }
   .about-section .about__quality-title {
-    font-size: 35px;
+    font-size: 37px;
     font-weight: 400;
     font-style: normal;
     color: #fff;
   }
   .about-section .about__quality-desc {
     max-width: 500px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     font-style: normal;
     color: #fff;
@@ -880,10 +881,10 @@ html {
 }
 @media (max-width: 576px) {
   .about-section .about__quality {
-    background: url("../assets/img/desktop_alpha.webp") 130px 100%/400px no-repeat;
+    background: url("../assets/img/desktop_alpha.webp") 130px 100%/350px no-repeat;
   }
   .about-section .about__quality-desc {
-    max-width: 320px;
+    max-width: 330px;
   }
 }
 .about-section .about__touch {
@@ -956,14 +957,14 @@ html {
     row-gap: 20px;
   }
   .about-section .about__touch-title {
-    font-size: 35px;
+    font-size: 37px;
     font-weight: 400;
     font-style: normal;
     color: #fff;
   }
   .about-section .about__touch-desc {
-    max-width: 340px;
-    font-size: 16px;
+    max-width: 360px;
+    font-size: 18px;
     font-weight: 300;
     font-style: normal;
     color: #fff;
@@ -1030,14 +1031,14 @@ html {
   }
   .about-section .about__approach-title {
     margin: 50px 0 0 0;
-    font-size: 35px;
+    font-size: 37px;
     font-weight: 400;
     font-style: normal;
     color: #fff;
   }
   .about-section .about__approach-desc {
     padding: 0 15px 0 0;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     font-style: normal;
     color: #fff;
@@ -1050,6 +1051,14 @@ html {
   }
   .about-section .about__approach-title {
     margin: 0;
+  }
+  .about-section .about__approach-desc {
+    max-width: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .about-section {
+    padding: 80px 0 0 0;
   }
 }
 
@@ -1086,6 +1095,11 @@ html {
   row-gap: 55px;
   width: 100%;
   padding: 15px;
+}
+@media (max-width: 768px) {
+  .experience {
+    padding: 80px 0 0 0;
+  }
 }
 
 .testimonials .slider__right-btn, .testimonials .slider__left-btn {
@@ -1213,6 +1227,11 @@ html {
     top: unset;
     bottom: 20px;
     right: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 80px 0 80px 0;
   }
 }
 
