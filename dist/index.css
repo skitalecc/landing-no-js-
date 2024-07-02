@@ -1,4 +1,4 @@
-.footer-section .footer__terms-link:hover, .footer-section .footer__terms-rights:hover, .header .nav__title:hover {
+.footer-section .footer__terms-link:hover, .footer-section .footer__terms-rights:hover, .header .nav__icon:hover {
   cursor: pointer;
   color: #B4B4B4;
 }
@@ -256,7 +256,7 @@ html {
   column-gap: 0;
   row-gap: 0;
 }
-.header .nav__title {
+.header .nav__icon {
   height: 100%;
   width: 255px;
   border-right: 1px solid #fff;
@@ -268,20 +268,20 @@ html {
   column-gap: 0;
   row-gap: 0;
 }
-.header .nav__title-link {
+.header .nav__icon-link {
   position: relative;
   font-size: 25px;
   font-weight: 500;
   color: #fff;
 }
-.header .nav__title-link span {
+.header .nav__icon-link span {
   font-weight: 700;
 }
-.header .nav__title-link:hover {
+.header .nav__icon-link:hover {
   cursor: pointer;
   color: #B4B4B4;
 }
-.header .nav__title-link::after {
+.header .nav__icon-link::after {
   content: "";
   position: absolute;
   display: block;
@@ -293,7 +293,7 @@ html {
   background-color: #B4B4B4;
   transition: right 0.29s;
 }
-.header .nav__title-link:hover::after {
+.header .nav__icon-link:hover::after {
   right: 0px;
 }
 .header .nav__links {
