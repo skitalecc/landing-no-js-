@@ -194,6 +194,10 @@ body {
   margin: 0;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 h1,
 h2,
 h3,
