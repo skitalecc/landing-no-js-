@@ -20,10 +20,10 @@
         height: 50px;
         @include m.d-flex(start, center);
 
-        &__title {
+        &__icon {
             height: 100%;
             width: 255px;
-            border-right: 1px solid v.$color_white;
+            border-right: 1px solid v.$color_white ;
 
             @include m.d-flex(center, center);
 
